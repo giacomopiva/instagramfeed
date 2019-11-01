@@ -1,4 +1,4 @@
-#Instagram Feed
+<h1>Instagram Feed</h1>
 
 ## Steps to get the client id, user id and access token
 
