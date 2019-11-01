@@ -1,16 +1,16 @@
-<h1>Instagram Feed</h1>
+# Instagram Feed
 
 ## Steps to get the client id, user id and access token
 
-###Step 1:
+### Step 1:
 Visit https://www.instagram.com/developer/ 
 Create a new App and a new Client to get a clientID and a clentSecret 
 
-###Step 2:
+### Step 2:
 Visit https://instagram.pixelunion.net/ 
 Use the clientID and clientSecret to get an access_token 
 
-###Step 3: 
+### Step 3: 
 Visit https://codeofaninja.com/tools/find-instagram-user-id 
 Use the Instagram @username to get the userID 
 
