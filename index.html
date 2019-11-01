@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Instagram Feed</title>
+
+    <script type="text/javascript" src="instafeed.min.js"></script>
+
+    <script type="text/javascript">
+		var feed = new Instafeed({
+	        get: 'user',
+	        userId: '', 				// User ID
+	        clientId: '',				// Client ID
+	        accessToken: '',			// Access Token
+	        target: 'instagramFeed',
+	        sortBy: 'most-recent',
+	        resolution: 'standard_resolution',
+	        template: '<a class="img_feed" target="_blank" href="{{link}}"><img src="{{image}}" /></a>',
+	        success: function(list) {
+				// Success code
+	        },
+	        error: function(msgError){
+	            alert(msgError);
+	        },
+	        /*filter: function(image) {
+				// Filtering code
+	        },*/
+	        /*after: function(model) {
+				// After code 
+	        },*/
+	        limit: 10
+	    });
+	
+	    feed.run();
+    </script>
+    <style>
+        #instagramFeed img {
+            display: inline-block;
+            max-width: 400px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="instagramFeed"></div>
+    </div>
+</body>
+</html>
